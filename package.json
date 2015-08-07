@@ -1,0 +1,17 @@
+{
+  "name": "lto",
+  "version": "0.0.1",
+  "description": "This is a todo service",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+  	"go": "node --harmony index.js",
+    "test": "test.js"
+  },
+  "author": "Arthur.li",
+  "license": "Private",
+  "dependencies":
+  {
+  	"koa": "0.21.0"
+  }
+}
