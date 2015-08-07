@@ -30,7 +30,7 @@ updated_at | time    | label刷新时间
 
 属性 	    |  类型 	 |  描述
 -----------|---------|--------
-id   		 | String  | 任务唯一id
+id   		 | Number  | 任务唯一id
 uuid       | String  | 任务唯一uuid
 title      | String  | 任务title
 body       | String  | 任务具体内容，此属性可以为空
