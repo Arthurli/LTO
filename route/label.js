@@ -8,21 +8,25 @@ module.exports = {
 
 function* allLabels () {
 	console.log("allLabels");
+	this.status = 200;
 }
 
 function* createLabel () {
 	console.log("createLabel");
+	this.status = 200;
 }
 
 function* getLabelInfo () {
 	console.log("getLabelInfo");
+	this.status = 200;
 }
 
 function* deleteLabel () {
 	console.log("deleteLabel");
+	this.status = 200;
 }
 
-function* updateLabel (next) {
+function* updateLabel () {
 	console.log("updateLabel");
-	yield next;
+	this.status = 200;
 }
