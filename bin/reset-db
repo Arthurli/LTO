@@ -1,0 +1,8 @@
+var models = require('../models');
+
+var sequelize = models.sequelize;
+sequelize.sync({
+  force: true
+}).catch(function(error) {
+	console.log(error);
+});
