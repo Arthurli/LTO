@@ -8,6 +8,11 @@ var Todo = require('./todo');
 var Group = require('./group');
 var Comment = require('./comment');
 
+User.hasMany(Label, {
+  foreignKey: 'userId',
+  onUpdate: 'CASCADE',
+  onDelete: 'CASCADE'
+});
 
 Model.sequelize = sequelize;
 
