@@ -18,8 +18,8 @@ function* signUpUser () {
 		this.session.uuid = newUser.uuid;
 
 		var response = {};
-		response.name = user.name;
-		response.uuid = user.uuid;
+		response.name = newUser.name;
+		response.uuid = newUser.uuid;
 
 		this.response.body = response;
 		this.status = 200;

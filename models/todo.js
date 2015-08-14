@@ -10,18 +10,19 @@ module.exports = sequelize.define("todo", {
 		autoIncrement: true,
 		allowNull: false
 	},
+	userId: {
+		type: Sequelize.INTEGER(11).UNSIGNED,
+		field: "user_id",
+		allowNull: false
+	},
 	uuid: {
 		type: Sequelize.STRING.BINARY,
 		field: "uuid",
 		allowNull: false
 	},
-	labelId: {
-		type: Sequelize.INTEGER(11).UNSIGNED,
-		field: "label_id",
-		// references: {
-  //    	model: "label",
-  //    	key: 'id',
-  // 	},
+	labelUUID: {
+		type: Sequelize.STRING.BINARY,
+		field: "label_uuid",
 		allowNull: false
 	},
 	title: {
@@ -37,20 +38,10 @@ module.exports = sequelize.define("todo", {
 	ownerUUID: {
 		type: Sequelize.STRING.BINARY,
 		field: "owner_uuid",
-		// references: {
-  //    	model: "user",
-  //    	key: 'uuid',
-  // 	},
-		allowNull: false
 	},
 	terminatorUUID: {
 		type: Sequelize.STRING.BINARY,
 		field: "terminator_uuid",
-		// references: {
-  //    	model: "user",
-  //    	key: 'uuid',
-  // 	},
-		allowNull: false
 	},
 	type: {
 		field: "type",
@@ -65,7 +56,7 @@ module.exports = sequelize.define("todo", {
 		defaultValue: "default"
 	},
 	expiredAt: {
-		type: Sequelize.DATE,
+		type: Sequelize.STRING,
 		field: "expired_at",
 	}
 });

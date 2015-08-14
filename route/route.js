@@ -32,10 +32,12 @@ module.exports = function (app) {
 	/**
 	 * todo相关方法
 	 */
-	app.use(route.get('/todos/:uuid', todo.getTodo));
 	app.use(route.post('/todos', todo.createTodo));
 	app.use(route.put('/todos/:uuid', todo.updateTodo));
 	app.use(route.delete('/todos/:uuid', todo.deleteTodo));
+	app.use(route.get('/todos/:todoUUID', todo.getTodoInfo));
+	app.use(route.get('/todos/label/:labelUUID', todo.getTodoByLabel));
+	app.use(route.get('/todos/date/:date', todo.getTodoByDate));
 
 	/**
 	 * group相关方法

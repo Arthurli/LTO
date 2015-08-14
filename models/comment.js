@@ -18,19 +18,6 @@ module.exports = sequelize.define("comment", {
 	todoUUID: {
 		type: Sequelize.STRING.BINARY,
 		field: "todo_uuid",
-		// references: {
-  //     model: "todo",
-  //     key: 'uuid',
-  // 	},
-		allowNull: false
-	},
-	userUUID: {
-		type: Sequelize.STRING.BINARY,
-		field: "user_uuid",
-		// references: {
-  //     model: "user",
-  //     key: 'uuid',
-  // 	},
 		allowNull: false
 	},
 	userName: {
