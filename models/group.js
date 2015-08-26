@@ -25,4 +25,6 @@ module.exports = sequelize.define("group", {
 		field: "owner_uuid",
 		allowNull: false
 	}
+}, {
+	freezeTableName: true
 });

@@ -31,5 +31,6 @@ module.exports = sequelize.define("comment", {
 		allowNull: false
 	}
 }, {
-	updatedAt: false
+	updatedAt: false,
+	freezeTableName: true
 });

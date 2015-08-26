@@ -59,4 +59,6 @@ module.exports = sequelize.define("todo", {
 		type: Sequelize.STRING,
 		field: "expired_at",
 	}
+},{
+	freezeTableName: true,
 });

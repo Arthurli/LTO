@@ -20,7 +20,7 @@ module.exports = new Sequelize(config.db, config.user, config.password, {
   port: config.port,
   pool: config.pool,
   dialect: config.dialect,
-  logging: config.logging,
+  logging: true,
   define: {
     underscored: true
   }

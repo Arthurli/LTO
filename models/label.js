@@ -40,4 +40,6 @@ module.exports = sequelize.define("label", {
 			allowNull: false,
 			defaultValue: "default"
 		}
+	},{
+		freezeTableName: true
 	});
